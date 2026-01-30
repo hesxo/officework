@@ -36,10 +36,10 @@ const CounDown = () => {
             </span>
 
             <h2 className="font-bold text-dark text-xl lg:text-heading-4 xl:text-heading-3 mb-3">
-              Enhance Your Music Experience
+              Printer Cartridges – Best Quality
             </h2>
 
-            <p>The Havit H206d is a wired PC headphone.</p>
+            <p>Explore our premium range of printer cartridges for all your printing needs.</p>
 
             {/* <!-- Countdown timer --> */}
             <div
@@ -107,7 +107,7 @@ const CounDown = () => {
               href="#"
               className="inline-flex font-medium text-custom-sm text-white bg-blue py-3 px-9.5 rounded-md ease-out duration-200 hover:bg-blue-dark mt-7.5"
             >
-              Check it Out!
+              Shop more
             </a>
           </div>
 
@@ -120,7 +120,7 @@ const CounDown = () => {
             height={482}
           />
           <Image
-            src="/images/countdown/countdown-01.png"
+            src="/images/countdown/countdown-new-02.png"
             alt="product"
             className="hidden lg:block absolute right-4 xl:right-33 bottom-4 xl:bottom-10 -z-1"
             width={411}

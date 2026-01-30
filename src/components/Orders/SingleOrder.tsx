@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import OrderActions from "./OrderActions";
 import OrderModal from "./OrderModal";
+import { formatPrice } from "@/lib/formatPrice";
 
 const SingleOrder = ({ orderItem, smallView }: any) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -108,8 +109,8 @@ const SingleOrder = ({ orderItem, smallView }: any) => {
 
             <div className="">
               <p className="text-custom-sm text-dark">
-                <span className="font-bold pr-2">Total:</span> $
-                {orderItem.total}
+                <span className="font-bold pr-2">Total:</span>{" "}
+                {formatPrice(Number(orderItem.total))}
               </p>
             </div>
 

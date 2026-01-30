@@ -4,11 +4,13 @@ import React, { useEffect, useState } from "react";
 import { useModalContext } from "@/app/context/QuickViewModalContext";
 import { AppDispatch, useAppSelector } from "@/redux/store";
 import { addItemToCart } from "@/redux/features/cart-slice";
+import { addItemToWishlist } from "@/redux/features/wishlist-slice";
 import { useDispatch } from "react-redux";
 import Image from "next/image";
 import { usePreviewSlider } from "@/app/context/PreviewSliderContext";
 import { resetQuickView } from "@/redux/features/quickView-slice";
 import { updateproductDetails } from "@/redux/features/product-details";
+import { formatPrice } from "@/lib/formatPrice";
 
 const QuickViewModal = () => {
   const { isModalOpen, closeModal } = useModalContext();
@@ -38,6 +40,17 @@ const QuickViewModal = () => {
       })
     );
 
+    closeModal();
+  };
+
+  const handleAddToWishlist = () => {
+    dispatch(
+      addItemToWishlist({
+        ...product,
+        status: "available",
+        quantity: 1,
+      })
+    );
     closeModal();
   };
 
@@ -101,7 +114,7 @@ const QuickViewModal = () => {
                         }`}
                     >
                       <Image
-                        src={img || ""}
+                        src={img || "/images/products/product-new-01.jpg"}
                         alt="thumbnail"
                         width={61}
                         height={61}
@@ -315,10 +328,10 @@ const QuickViewModal = () => {
 
                   <span className="flex items-center gap-2">
                     <span className="font-semibold text-dark text-xl xl:text-heading-4">
-                      ${product.discountedPrice}
+                      {formatPrice(product.discountedPrice)}
                     </span>
                     <span className="font-medium text-dark-4 text-lg xl:text-2xl line-through">
-                      ${product.price}
+                      {formatPrice(product.price)}
                     </span>
                   </span>
                 </div>
@@ -401,7 +414,9 @@ const QuickViewModal = () => {
                 </button>
 
                 <button
-                  className={`inline-flex items-center gap-2 font-medium text-white bg-dark py-3 px-6 rounded-md ease-out duration-200 hover:bg-opacity-95 `}
+                  type="button"
+                  onClick={handleAddToWishlist}
+                  className="inline-flex items-center gap-2 font-medium text-white bg-dark py-3 px-6 rounded-md ease-out duration-200 hover:bg-opacity-95"
                 >
                   <svg
                     className="fill-current"

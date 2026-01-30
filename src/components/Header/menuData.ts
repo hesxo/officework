@@ -3,7 +3,7 @@ import { Menu } from "@/types/Menu";
 export const menuData: Menu[] = [
   {
     id: 1,
-    title: "Popular",
+    title: "Home",
     newTab: false,
     path: "/",
   },
@@ -14,14 +14,20 @@ export const menuData: Menu[] = [
     path: "/shop-with-sidebar",
   },
   {
-    id: 3,
-    title: "Contact",
+    id: 4,
+    title: "About us",
+    newTab: false,
+    path: "/about-us",
+  },
+  {
+    id: 5,
+    title: "Contact us",
     newTab: false,
     path: "/contact",
   },
   {
     id: 6,
-    title: "pages",
+    title: "Pages",
     newTab: false,
     path: "/",
     submenu: [
@@ -80,48 +86,16 @@ export const menuData: Menu[] = [
         path: "/contact",
       },
       {
-        id: 62,
+        id: 71,
         title: "Error",
         newTab: false,
         path: "/error",
       },
       {
-        id: 63,
+        id: 72,
         title: "Mail Success",
         newTab: false,
         path: "/mail-success",
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: "blogs",
-    newTab: false,
-    path: "/",
-    submenu: [
-      {
-        id: 71,
-        title: "Blog Grid with sidebar",
-        newTab: false,
-        path: "/blogs/blog-grid-with-sidebar",
-      },
-      {
-        id: 72,
-        title: "Blog Grid",
-        newTab: false,
-        path: "/blogs/blog-grid",
-      },
-      {
-        id: 73,
-        title: "Blog details with sidebar",
-        newTab: false,
-        path: "/blogs/blog-details-with-sidebar",
-      },
-      {
-        id: 74,
-        title: "Blog details",
-        newTab: false,
-        path: "/blogs/blog-details",
       },
     ],
   },

@@ -31,51 +31,22 @@ const ShopWithSidebar = () => {
   ];
 
   const categories = [
-    {
-      name: "Desktop",
-      products: 10,
-      isRefined: true,
-    },
-    {
-      name: "Laptop",
-      products: 12,
-      isRefined: false,
-    },
-    {
-      name: "Monitor",
-      products: 30,
-      isRefined: false,
-    },
-    {
-      name: "UPS",
-      products: 23,
-      isRefined: false,
-    },
-    {
-      name: "Phone",
-      products: 10,
-      isRefined: false,
-    },
-    {
-      name: "Watch",
-      products: 13,
-      isRefined: false,
-    },
+    { name: "Seth Products", products: 10, isRefined: true },
+    { name: "Filing & Storage", products: 12, isRefined: false },
+    { name: "General Stationery", products: 30, isRefined: false },
+    { name: "Computer Stationery", products: 23, isRefined: false },
+    { name: "Office Stationery", products: 10, isRefined: false },
+    { name: "Books", products: 13, isRefined: false },
+    { name: "Board", products: 8, isRefined: false },
+    { name: "Accessories", products: 15, isRefined: false },
   ];
 
-  const genders = [
-    {
-      name: "Men",
-      products: 10,
-    },
-    {
-      name: "Women",
-      products: 23,
-    },
-    {
-      name: "Unisex",
-      products: 8,
-    },
+  const useTypes = [
+    { name: "Office", products: 10 },
+    { name: "School", products: 23 },
+    { name: "Home", products: 8 },
+    { name: "Art & Craft", products: 12 },
+    { name: "General", products: 18 },
   ];
 
   useEffect(() => {
@@ -160,7 +131,7 @@ const ShopWithSidebar = () => {
                   <CategoryDropdown categories={categories} />
 
                   {/* <!-- gender box --> */}
-                  <GenderDropdown genders={genders} />
+                  <GenderDropdown genders={useTypes} />
 
                   {/* // <!-- size box --> */}
                   <SizeDropdown />

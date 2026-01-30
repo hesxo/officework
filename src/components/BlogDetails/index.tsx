@@ -12,7 +12,7 @@ const BlogDetails = () => {
           <div className="rounded-[10px] overflow-hidden mb-7.5">
             <Image
               className="rounded-[10px]"
-              src="/images/blog/blog-details-01.jpg"
+              src="/images/products/product-new-01.jpg"
               alt="details"
               width={750}
               height={477}
@@ -139,7 +139,7 @@ const BlogDetails = () => {
                       className="inline-flex hover:text-white border border-gray-3 bg-white py-2 px-4 rounded-md ease-out duration-200 hover:bg-blue hover:border-blue"
                       href="#"
                     >
-                      Desktop
+                      Seth Products
                     </a>
                   </li>
 
@@ -148,7 +148,7 @@ const BlogDetails = () => {
                       className="inline-flex hover:text-white border border-gray-3 bg-white py-2 px-4 rounded-md ease-out duration-200 hover:bg-blue hover:border-blue"
                       href="#"
                     >
-                      Macbook
+                      Stationery
                     </a>
                   </li>
 
@@ -157,7 +157,7 @@ const BlogDetails = () => {
                       className="inline-flex hover:text-white border border-gray-3 bg-white py-2 px-4 rounded-md ease-out duration-200 hover:bg-blue hover:border-blue"
                       href="#"
                     >
-                      PC
+                      Office
                     </a>
                   </li>
                 </ul>

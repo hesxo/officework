@@ -1,43 +1,43 @@
 const data = [
   {
-    title: "Televisions",
+    title: "Seth Products",
     id: 1,
-    img: "/images/categories/categories-01.png",
+    img: "/images/categories/gen-tech.png",
   },
   {
-    title: "Laptop & PC",
+    title: "Accessories",
     id: 2,
-    img: "/images/categories/categories-02.png",
+    img: "/images/categories/gen-general-stationery.png",
   },
   {
-    title: "Mobile & Tablets",
+    title: "Board",
     id: 3,
-    img: "/images/categories/categories-03.png",
+    img: "/images/categories/gen-filing.png",
   },
   {
-    title: "Games & Videos",
+    title: "Books",
     id: 4,
-    img: "/images/categories/categories-04.png",
+    img: "/images/categories/office%20work08.jpg",
   },
   {
-    title: "Home Appliances",
+    title: "Computer Stationery",
     id: 5,
-    img: "/images/categories/categories-05.png",
+    img: "/images/categories/office%20work09.jpg",
   },
   {
-    title: "Health & Sports",
+    title: "Filing And Storage",
     id: 6,
-    img: "/images/categories/categories-06.png",
+    img: "/images/categories/office%20work10.jpg",
   },
   {
-    title: "Watches",
+    title: "General Stationery",
     id: 7,
-    img: "/images/categories/categories-07.png",
+    img: "/images/categories/office%20work11.jpg",
   },
   {
-    title: "Televisions",
+    title: "Office Stationery",
     id: 8,
-    img: "/images/categories/categories-04.png",
+    img: "/images/categories/office%20work12.jpg",
   },
 ];
 

@@ -6,6 +6,7 @@ import { removeItemFromWishlist } from "@/redux/features/wishlist-slice";
 import { addItemToCart } from "@/redux/features/cart-slice";
 
 import Image from "next/image";
+import { formatPrice } from "@/lib/formatPrice";
 
 const SingleItem = ({ item }) => {
   const dispatch = useDispatch<AppDispatch>();
@@ -27,8 +28,9 @@ const SingleItem = ({ item }) => {
     <div className="flex items-center border-t border-gray-3 py-5 px-10">
       <div className="min-w-[83px]">
         <button
+          type="button"
           onClick={() => handleRemoveFromWishlist()}
-          aria-label="button for remove product from wishlist"
+          aria-label="Remove from wishlist"
           className="flex items-center justify-center rounded-lg max-w-[38px] w-full h-9.5 bg-gray-2 border border-gray-3 ease-out duration-200 hover:bg-red-light-6 hover:border-red-light-4 hover:text-red"
         >
           <svg
@@ -57,7 +59,7 @@ const SingleItem = ({ item }) => {
         <div className="flex items-center justify-between gap-5">
           <div className="w-full flex items-center gap-5.5">
             <div className="flex items-center justify-center rounded-[5px] bg-gray-2 max-w-[80px] w-full h-17.5">
-              <Image src={item.imgs?.thumbnails[0]} alt="product" width={200} height={200} />
+              <Image src={item.imgs?.thumbnails?.[0] ?? "/images/products/product-new-01.jpg"} alt="product" width={200} height={200} />
             </div>
 
             <div>
@@ -70,7 +72,7 @@ const SingleItem = ({ item }) => {
       </div>
 
       <div className="min-w-[205px]">
-        <p className="text-dark">${item.discountedPrice}</p>
+        <p className="text-dark">{formatPrice(item.discountedPrice)}</p>
       </div>
 
       <div className="min-w-[265px]">
