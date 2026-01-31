@@ -2,9 +2,8 @@ import Home from "@/components/Home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "NextCommerce | Nextjs E-commerce template",
-  description: "This is Home for NextCommerce Template",
-  // other metadata
+  title: "Officeworks | Stationery & Office Supplies",
+  description: "Officeworks - Sri Lanka's leading stationery and office supplies store",
 };
 
 export default function HomePage() {
